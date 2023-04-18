@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<htm lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Mario jogo1</title>
+  </head>
+
+  <body>
+    <div class="game-board">
+      <div class="pontos">0</div>
+      <div class="vidas">
+        <ul>
+          <li id="v1">❤</li>
+          <li id="v2">❤</li>
+          <li id="v3">❤</li>
+        </ul>
+      </div>
+
+      <div class="qtde_tiros">
+        <ul>
+          <li id="t1">✈</li>
+          <li id="t2">✈</li>
+          <li id="t3">✈</li>
+          <li id="t4">✈</li>
+          <li id="t5">✈</li>
+        </ul>
+      </div>
+
+      <img src="./imagens/missel.png" class="tiro" />
+      <img src="./imagens/nuven-2.png" class="nuvem-1" />
+      <img src="./imagens/nuven-2.png" class="nuvem-2" />
+      <img src="./imagens/nuven-1.png" class="nuvem-3" />
+      <img src="./imagens/passaro-1.gif" class="passaro-1" />
+
+      <img src="./imagens/sapato-02.png" class="lixo" />
+
+      <img src="./imagens/mario05.gif" class="mario" />
+
+      <p class="informacao">
+        Teclas >> PULAR: seta cima ANDAR: seta direita e esquerda ATIRAR: espaco
+      </p>
+      <!-- sons do jogo-->
+      <audio id="son_pulo" preload="auto">
+        <source src="./sons/sonpulo.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="son_explosao" preload="auto">
+        <source src="./sons/sonexplosao2.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="son_andar" preload="auto">
+        <source src="./sons/sonandar.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="son_batida" preload="auto">
+        <source src="./sons/sonbatida.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="son_gameover" preload="auto">
+        <source src="./sons/gameover.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </body>
+</htm>

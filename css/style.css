@@ -1,0 +1,229 @@
+.game-board {
+  background: linear-gradient(#87ceeb, #efd022);
+  animation: dia_e_noite 20s linear 2s infinite;
+  width: 95%;
+  height: 500px;
+  border: 25px solid green;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.informacao {
+  position: absolute;
+  top: 0;
+  color: red;
+  margin: auto;
+  width: 100%;
+  animation: informacao 5s infinite alternate;
+}
+
+.lixo {
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+  height: 80px;
+  animation: lixo-animation 5.5s infinite linear;
+}
+
+.mario {
+  position: absolute;
+  bottom: 3px;
+  width: 85px;
+  left: 20px;
+  transform: rotateY(0deg);
+}
+
+.jump {
+  /*animation: mario-pulo 500ms ease-out; */
+  animation: mario-pulo 900ms ease-out;
+}
+
+/*
+.mario_tiro {
+  animation: tiro_animation 300ms linear;
+}
+*/
+
+.tiro {
+  position: absolute;
+  width: 75px;
+  height: 45px;
+  bottom: 40px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.dispara_tiro {
+  visibility: visible;
+  animation: tiro_animation 1200ms linear;
+}
+
+.nuvem-1 {
+  position: absolute;
+  width: 250px;
+  top: 20px;
+  animation: nuvem-1-animation 15s infinite linear;
+}
+
+.nuvem-2 {
+  position: absolute;
+  width: 150px;
+  top: 50px;
+  animation: nuvem-1-animation 20s infinite linear;
+}
+
+.nuvem-3 {
+  position: absolute;
+  width: 200px;
+  top: 60px;
+  animation: nuvem-1-animation 16s infinite linear;
+}
+
+.passaro-1 {
+  position: absolute;
+  width: 100px;
+  top: 80px;
+  animation: passaro-1-animation 16s infinite linear;
+}
+
+.vidas {
+  position: absolute;
+  display: inline;
+  width: 200px;
+  height: 200px;
+  top: 15px;
+  left: 25px;
+  color: red;
+}
+
+.qtde_tiros {
+  position: absolute;
+  display: inline;
+  width: 300px;
+  height: 200px;
+  top: 15px;
+  left: 5px;
+  color: green;
+}
+
+.circulo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 50px;
+}
+
+.pontos {
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  top: 5px;
+  right: 5%;
+  font-size: 50px;
+  color: white;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes passaro-1-animation {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes nuvem-1-animation {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes lixo-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes mario-pulo {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes informacao {
+  from {
+    transform: translateX(70%);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes informacao2 {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes tiro_animation {
+  from {
+    left: -30px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* animação padrão */
+@keyframes dia_e_noite {
+  0% {
+    background: linear-gradient(#87ceeb, #efd022);
+  }
+  15% {
+    background: linear-gradient(#87ceeb, #e0f6ff);
+  }
+  30%,
+  45% {
+    background: linear-gradient(#87ceeb, #e0f6ff);
+  }
+  55% {
+    background: linear-gradient(#87ceeb, #cea813);
+  }
+  65% {
+    background: linear-gradient(#87ceeb, #f18c0f);
+  }
+  75% {
+    background: linear-gradient(0, #120c56, #000000);
+  }
+  85%,
+  100% {
+    background: linear-gradient(0, #120c56, #000000);
+  }
+}
